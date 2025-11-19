@@ -1,0 +1,145 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+    <world name="pool">
+        <model name="pool">
+
+            <static>true</static>
+            <link name="pool_floor">
+                <collision name="floor_collision">
+                    <pose>0 0 -0.25 0 0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>2 2 0.5</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>0.2</mu>
+                                <mu2>0.2</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="floor_visual">
+                    <pose>0 0 -0.25 0 0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>2 2 0.5</size>
+                        </box>
+                    </geometry>
+                </visual>
+            </link>
+
+            <link name="back_wall">
+                <collision name="bw_collision">
+                    <pose degrees="true">0 -1 0 0 90 0</pose>
+                    <geometry>
+                        <box>
+                            <size>2 0.2 1</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>0.2</mu>
+                                <mu2>0.2</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="bw_visual">
+                    <pose degrees="true">0 -1 0 0 90 0</pose>
+                    <geometry>
+                        <box>
+                            <size>2 0.2 1</size>
+                        </box>
+                    </geometry>
+                </visual>
+            </link>
+
+            <link name="front_wall">
+                <collision name="fw_collision">
+                    <pose degrees="true">0 1 0 0 90 0</pose>
+                    <geometry>
+                        <box>
+                            <size>2 0.2 1</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>0.2</mu>
+                                <mu2>0.2</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="fw_visual">
+                    <pose degrees="true">0 1 0 0 90 0</pose>
+                    <geometry>
+                        <box>
+                            <size>2 0.2 1</size>
+                        </box>
+                    </geometry>
+                </visual>
+            </link>
+
+            <link name="right_wall">
+                <collision name="rw_collision">
+                    <pose degrees="true">1 0 0 90 0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>2 0.2 1</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>0.2</mu>
+                                <mu2>0.2</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="rw_visual">
+                    <pose degrees="true">1 0 0 90 0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>2 0.2 1</size>
+                        </box>
+                    </geometry>
+                </visual>
+            </link>
+
+            <link name="left_wall">
+                <collision name="lw_collision">
+                    <pose degrees="true">-1 0 0 90 0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>2 0.2 1</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <mu>0.2</mu>
+                                <mu2>0.2</mu2>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <visual name="lw_visual">
+                    <pose degrees="true">-1 0 0 90 0 0</pose>
+                    <geometry>
+                        <box>
+                            <size>2 0.2 1</size>
+                        </box>
+                    </geometry>
+                </visual>
+            </link>
+
+        </model>
+        
+    </world>
+</sdf>
