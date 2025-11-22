@@ -140,6 +140,27 @@
             </link>
 
         </model>
-        
+
+        <link name="pool_water">
+            <visual name="water">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <box>
+                        <size>2 2 2</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.0 0.4 0.8 0.3</ambient>
+                    <diffuse>0.0 0.5 1.0 0.3</diffuse>
+                    <specular>0.8 0.8 0.8 0.5</specular>
+                </material>
+            </visual>
+        </link>
+
+        <light name="sun">
+            <cast_shadows>true</cast_shadows>
+            <diffuse>0.0 0.5 1.0 1</diffuse>
+        </light>
+
     </world>
 </sdf>
